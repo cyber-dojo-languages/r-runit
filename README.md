@@ -1,4 +1,4 @@
-# rbase-runit
+# R, RUunit
 
-![Build Status](https://travis-ci.org/cyber-dojo-languages/rbase-runit.svg?branch=master)
+![Build Status](https://travis-ci.org/cyber-dojo-languages/r-runit.svg?branch=master)
 
