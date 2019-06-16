@@ -1,5 +1,5 @@
 
-[![CircleCI](https://circleci.com/gh/cyber-dojo-languages/rbase-runit.svg?style=svg)](https://circleci.com/gh/cyber-dojo-languages/rbase-runit)
+[![CircleCI](https://circleci.com/gh/cyber-dojo-languages/r-runit.svg?style=svg)](https://circleci.com/gh/cyber-dojo-languages/r-runit)
 
 # display_name="R, RUnit"
 # image_name="cyberdojofoundation/r_runit"
