@@ -1,4 +1,4 @@
-FROM  cyberdojofoundation/rbase
+FROM cyberdojofoundation/rbase
 LABEL maintainer=jon@jaggersoft.com
 
 RUN apt-get update \
