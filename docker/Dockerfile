@@ -13,8 +13,7 @@ RUN apt-get update && apt-get install --yes coreutils bash tar file
 
 LABEL maintainer=jon@jaggersoft.com
 
-RUN apt-get update \
- && apt-get install --yes wget
+RUN apt-get install --yes wget
 
 COPY install_RUnit.R /
 RUN cd / && Rscript install_RUnit.R
