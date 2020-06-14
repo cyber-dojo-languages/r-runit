@@ -1,4 +1,4 @@
-FROM cyberdojofoundation/rbase
+FROM cyberdojofoundation/rbase:62337f3
 LABEL maintainer=jon@jaggersoft.com
 
 RUN apt-get install --yes wget
