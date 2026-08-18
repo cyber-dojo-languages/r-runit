@@ -3,5 +3,11 @@ LABEL maintainer=jon@jaggersoft.com
 
 RUN apt-get install --yes wget
 
-COPY install_RUnit.R .
-RUN cd . && Rscript install_RUnit.R
+# RUnit comes from apt, not install.packages(). RUnit is pure R, so Ubuntu ships
+# it as an architecture-independent .deb with nothing to compile. Building it
+# from source needs R's own INSTALL, which qemu cannot exec while emulating the
+# arm64 build, so that route succeeds for amd64 and fails for arm64.
+RUN apt-get install --yes r-cran-runit
+
+COPY assert_RUnit_installed.R .
+RUN cd . && Rscript assert_RUnit_installed.R
