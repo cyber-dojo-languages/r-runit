@@ -1,4 +1,4 @@
-FROM ghcr.io/cyber-dojo-languages/rbase:272dcfe
+FROM ghcr.io/cyber-dojo-languages/rbase:6f0625c
 LABEL maintainer=jon@jaggersoft.com
 
 RUN apt-get install --yes wget
