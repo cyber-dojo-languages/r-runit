@@ -1,4 +1,4 @@
-FROM ghcr.io/cyber-dojo-languages/rbase:6f0625c
+FROM ghcr.io/cyber-dojo-languages/rbase:5bdb114
 LABEL maintainer=jon@jaggersoft.com
 
 RUN apt-get install --yes wget
@@ -11,3 +11,6 @@ RUN apt-get install --yes r-cran-runit
 
 COPY assert_RUnit_installed.R .
 RUN cd . && Rscript assert_RUnit_installed.R
+
+COPY install.sh .
+RUN ./install.sh && rm ./install.sh

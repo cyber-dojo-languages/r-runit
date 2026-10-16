@@ -1,3 +1,4 @@
 *
 !assert_RUnit_installed.R
+!install.sh
 !red_amber_green.rb
